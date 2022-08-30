@@ -1,0 +1,541 @@
+{
+	"info": {
+		"_postman_id": "cf3d028d-1b8c-45dd-8a7a-814e077d738e",
+		"name": "API Automation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "60ab051d-3b1c-4fcd-82af-a95bf939659d",
+						"exec": [
+							"pm.test('has a token', function(){",
+							"",
+							"\tconst {data} = pm.response.json();",
+							"\tpm.environment.set('token', data.token);",
+							"\treturn 'token' in data;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "3390ac40-f4a6-408d-a146-6e95373efbe1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "e_login_type",
+							"value": "email",
+							"type": "text"
+						},
+						{
+							"key": "v_udid",
+							"value": "1234567",
+							"type": "text"
+						},
+						{
+							"key": "v_device_model",
+							"value": "web",
+							"type": "text"
+						},
+						{
+							"key": "v_os_version",
+							"value": "web",
+							"type": "text"
+						},
+						{
+							"key": "v_app_version",
+							"value": "web",
+							"type": "text"
+						},
+						{
+							"key": "e_device_type",
+							"value": "Web",
+							"type": "text"
+						},
+						{
+							"key": "v_email",
+							"value": "dev.popup@mailinator.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "v_social_media_id",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "v_name",
+							"value": "Disha V",
+							"type": "text"
+						},
+						{
+							"key": "user_ip",
+							"value": "127.0.0.1",
+							"type": "text"
+						}
+					],
+					"options": {}
+				},
+				"url": "{{upper_team_url/v1}}/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Route Create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fc03640c-53d2-41f4-998e-e4c42eaf1ae7",
+						"exec": [
+							"pm.test('Route Id', function(){",
+							"",
+							"\tconst {data} = pm.response.json();",
+							"\tpm.environment.set('id', data.data[0].id);",
+							"    pm.environment.set('i_user_id', data.data[0].i_user_id);",
+							"    ",
+							"\treturn 'id, i_user_id' in data;",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "db9e55a3-dcc8-4c2f-ae0b-1827e410f270",
+						"exec": [
+							"let v_name = pm.variables.replaceIn(\"{{$randomUserName}}\")",
+							"pm.environment.set(\"v_name\", `${v_name}`)",
+							"",
+							"// let jsonResponse = pm.response.json();",
+							"// let v_name = jsonResponse.add.v_name;",
+							"",
+							"// pm.collectionVariables.set(\"v_name\", v_name);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "404bb997-8e12-476f-9a45-0dfdc4548a45",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"add\": [\n        {\n            \"v_name\": \"{{v_name}}\",\n            \"t_start_date\": \"2020-03-10 09:00:00\",\n            \"e_optimization_preference\": \"Distance\",\n            \"e_units\": \"Miles\",\n            \"v_gh_drive_preference\": \"\",\n            \"i_vehicle_type_id\": 1,\n            \"e_default_navigation_map\": \"Google\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{upper_team_url/v1}}/routes?page=1",
+					"host": [
+						"{{upper_team_url/v1}}"
+					],
+					"path": [
+						"routes"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stop Add",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a9f8ffce-cc37-4b0c-a5bf-16024ccb986d",
+						"exec": [
+							"let data_set = [",
+							"    ['Helmet Cross Roads, University Area, Ahmedabad, Gujarat',23.0451559,72.5421677],",
+							"    ['Memnagar, Ahmedabad, Gujarat, India',23.0523843,72.5337182],",
+							"    ['Bodakdev, Ahmedabad, Gujarat, India',23.0386593,72.5118581],",
+							"    ['Ellisbridge, Ahmedabad, Gujarat, India',23.0225015,72.5739267]",
+							"];",
+							"",
+							"let total = [];",
+							"console.log(data_set);",
+							"    let i_user_id =  pm.environment.get(\"i_user_id\");",
+							"    let id =  pm.environment.get(\"id\");",
+							"for (let i = 0; i < data_set.length; i++) {",
+							"    let l_address = data_set[i][0];",
+							"    let d_latitude = data_set[i][1];",
+							"    let d_longitude = data_set[i][2];",
+							"    ",
+							"  ",
+							"    ",
+							"    const item = ",
+							"        {",
+							"            \"l_address\": l_address,",
+							"            \"d_latitude\": d_latitude,",
+							"            \"d_longitude\": d_longitude,",
+							"            \"i_user_id\":i_user_id,",
+							"            \"i_route_id\":id,",
+							"            \"e_stop_address_type\": \"Stop\",",
+							"            \"i_optimised_order_index\": 1",
+							"        }",
+							"",
+							"     total.push(item);",
+							"    };",
+							"        total.push({",
+							"            \"i_route_id\": id,",
+							"            \"i_user_id\": i_user_id,",
+							"            \"l_address\": \"Iskcon Cross Rd, Ramdev Nagar, Ahmedabad, Gujarat\",",
+							"            \"d_latitude\": 23.0272,",
+							"            \"d_longitude\": 72.5085,",
+							"            \"e_stop_address_type\": \"Start\",",
+							"            \"i_optimised_order_index\": -1",
+							"        });",
+							"        total.push({",
+							"            \"i_route_id\": id,",
+							"            \"i_user_id\": i_user_id,",
+							"            \"l_address\": \"Nehru Nagar Circle, Ambawadi, Ahmedabad, Gujarat\",",
+							"            \"d_latitude\": 23.022201,",
+							"            \"d_longitude\": 72.542658,",
+							"             \"e_stop_address_type\": \"End\",",
+							"            \"i_optimised_order_index\": -1",
+							"        });",
+							"",
+							"pm.environment.set(\"total\", JSON.stringify(total));"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "db397f9a-a7e9-4ca4-bd08-900e5bb9d2d2",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "e5c9107f-7849-40b7-b205-2119fa86ab9e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"add\": {{total}}\n        ,\n        \"search\": {\n            \"keyword\": \"\",\n            \"id\": \"\",\n            \"favorite\": \"\",\n            \"route_id\": {{id}},\n            \"e_row_status\": [\n                \"Active\"\n            ]\n        },\n        \"sort\": {\n            \"by\": \"id\",\n            \"order\": \"desc\"\n        }\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{upper_team_url/v1}}/route-stops?page=1",
+					"host": [
+						"{{upper_team_url/v1}}"
+					],
+					"path": [
+						"route-stops"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update-Driver",
+			"_postman_id": "a02a7335-5045-4069-be01-7a02ded3e28e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"route_id\": {{id}},\n    \"team_member_id\":{{i_user_id}},\n    \"driver_setting\": {\n        \"i_vehicle_type_id\": 1,\n        \"t_shift_start_time\":\"09:00\",\n        \"t_shift_end_time\":\"18:30\",\n        \"t_break_start_time\":\"13:00\",\n        \"t_break_end_time\": \"14:00\",\n        \"e_default_navigation_map\": \"Google\",\n        \"e_units\": \"Miles\",\n        \"e_roadside\": \"Any\",\n        \"e_traffic_consider\": \"N\",\n        \"e_curbside_strictness\": \"Soft\",\n        \"e_coordinates_show\": \"Y\",\n        \"v_gEncodedPolyline\": \"\",\n        \"v_gStepPolyline\": \"\",\n        \"v_share_url\": \"\",\n        \"e_message_status\": \"Not Send\",\n        \"e_mail_status\": \"Not Send\"\n    },\n    \"depot_address\": {\n        \"start\": {\n            \"l_address\": \"Iskcon Cross Rd, Ramdev Nagar, Ahmedabad, Gujarat\",\n            \"v_city\": \"Ahmedabad\",\n            \"v_state\": \"Gujarat\",\n            \"v_zipcode\": \"380015\",\n            \"i_countryId\": \"101\",\n            \"d_latitude\": 23.0272,\n            \"d_longitude\": 72.5085\n        },\n        \"end\": {\n            \"l_address\": \"Nehru Nagar Circle, Ambawadi, Ahmedabad, Gujarat\",\n            \"d_latitude\": 23.022201,\n            \"d_longitude\": 72.542658,\n            \"v_city\": \"Ahmedabad\"\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{upper_team_url/v1}}/update-driver-route-settings"
+			},
+			"response": []
+		},
+		{
+			"name": "Assign Driver",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ad102a51-60d5-4085-b628-a9a4109ad479",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "b6b29bc2-777d-4d65-8ed9-f463b30f2976",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"update\": [\n        {\n            \"id\": {{id}},\n            \"v_selected_driver_ids\": {{i_user_id}},\n            \"i_drivers_count\":\"1\"\n        }\n    ],\n \"search\": {\n            \"keyword\": \"\",\n            \"id\": \"\",\n            \"favorite\": \"\",\n            \"route_id\": {{id}}\n }\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{upper_team_url/v1}}/routes?page=1",
+					"host": [
+						"{{upper_team_url/v1}}"
+					],
+					"path": [
+						"routes"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ghrequest",
+			"_postman_id": "b76768e6-f68f-4edc-a2f3-a9e93aabca53",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"route_id\": {{id}},\n  \"user_id\": {{i_user_id}},\n  \"optimization_source\": \"optimize\",\n  \"timezone\": \"UTC\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{upper_team_url/v1}}/ghrequest"
+			},
+			"response": []
+		},
+		{
+			"name": "Dispatch Drivers",
+			"_postman_id": "c2e37e2c-c0be-48ae-b6de-c45b14082d1e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{upper_team_url/v1}}/dispatch-drivers?route_id={{id}}&sort_by=id&sort_order=asc&page=1&limit=10&is_dispatched=Y",
+					"host": [
+						"{{upper_team_url/v1}}"
+					],
+					"path": [
+						"dispatch-drivers"
+					],
+					"query": [
+						{
+							"key": "route_id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "sort_by",
+							"value": "id"
+						},
+						{
+							"key": "sort_order",
+							"value": "asc"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "is_dispatched",
+							"value": "Y"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "042b1236-d2bd-4bcc-805a-2ba8e5ea89f1"
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "0197ca63-5fa8-4a9e-9121-e843e3ee4419"
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "163ada0d-4017-49ea-ab42-b0ca1bc2b7ce",
+			"key": "upper_team_url/v1\n",
+			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
+			"type": "string"
+		},
+		{
+			"id": "d08197e3-c0db-415e-afb9-5a563766ce18",
+			"key": "token\n",
+			"value": "{{token}}\n",
+			"type": "string"
+		},
+		{
+			"id": "81832c59-75ee-4516-a151-835f168cb3d4",
+			"key": "id\n",
+			"value": "{{id}}\n",
+			"type": "string"
+		},
+		{
+			"id": "9c37a35a-a5a9-404d-b541-15d867667e32",
+			"key": "i_user_id\n",
+			"value": "{{i_user_id}}\n",
+			"type": "string"
+		},
+		{
+			"id": "94ed06ce-8f99-415c-b6d8-f7f612f22072",
+			"key": "e_stop_address_type",
+			"value": "{{e_stop_address_type}}",
+			"type": "string"
+		},
+		{
+			"id": "08256152-d4f9-425a-bf61-1e1ec2d9df3c",
+			"key": "l_address",
+			"value": "{{l_address}}",
+			"type": "string"
+		},
+		{
+			"id": "f1187cfb-a62e-4a8b-8488-bdda513b618c",
+			"key": "d_latitude",
+			"value": "{{d_latitude}}",
+			"type": "string"
+		},
+		{
+			"id": "ed70fe6a-765c-4e8d-a0ec-1c21aab4d23a",
+			"key": "d_longitude",
+			"value": "{{d_longitude}}",
+			"type": "string"
+		},
+		{
+			"id": "3b6731e5-9e7d-46b1-afee-b14cab6449ae",
+			"key": "i_optimised_order_index",
+			"value": "{{i_optimised_order_index}}",
+			"type": "string"
+		}
+	]
+}
