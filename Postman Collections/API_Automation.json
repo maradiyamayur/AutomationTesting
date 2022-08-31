@@ -484,9 +484,14 @@
 							"// pm.globals.set(\"today\", moment().format(\"MM/DD/YYYY\"));",
 							"// console.log(moment());",
 							"",
-							"pm.sendRequest(\"http://worldtimeapi.org/api/timezone/Europe/Rome\", function (err, res) {",
-							"    pm.globals.set(\"localTimeRome\", res.json().datetime);",
-							"});"
+							"",
+							"var dateUTC = new Date(\"MM/DD/YYYY\");",
+							"var dateUTC = dateUTC.getTime() ",
+							"var dateIST = new Date(dateUTC);",
+							"//date shifting for IST timezone (+5 hours and 30 minutes)",
+							"dateIST.setHours(dateIST.getHours() + 5); ",
+							"dateIST.setMinutes(dateIST.getMinutes() + 30);",
+							"pm.globals.set(dateIST);"
 						],
 						"type": "text/javascript"
 					}
@@ -544,55 +549,55 @@
 	],
 	"variable": [
 		{
-			"id": "fff6cbcb-dc9e-4998-a5ad-744d063fe1cd",
+			"id": "8e524e80-9ee3-4416-8a12-9fb893f3f1cd",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "7cb32b56-cabb-4009-bb83-c92d8e3da279",
+			"id": "22e48e85-ab64-4197-9737-2e41db9fa977",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "3162a27c-6a4d-484b-90e4-028bc912713a",
+			"id": "a7a75829-eacd-4968-9c2e-43306ec1029e",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "c1733f0a-d423-4d93-a02d-a422ea421977",
+			"id": "ae199680-fbcf-4fa0-881d-d114911b0e91",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "646b6352-aca6-4460-9f55-b0c61edc1847",
+			"id": "69b44f28-5492-424d-a63a-c48b884fce74",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "73e37fbe-a582-4520-ba55-ab3d4cf99c5e",
+			"id": "9a66695b-61f6-4884-8871-0dc18c37b008",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "93a8f353-67bf-46d5-b90c-821a87eb1cdd",
+			"id": "588703d9-f22e-4289-ba4b-5c062c19526e",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "8f8813bd-afb7-4c63-89b3-52888c19aec9",
+			"id": "63eba947-308a-4b9a-ab90-5b1bd121424c",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "dda48c46-83f0-4a75-8a11-011f9fefb183",
+			"id": "876a94aa-db46-434d-8863-7eeb041fbe21",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
