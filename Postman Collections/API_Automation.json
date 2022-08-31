@@ -480,9 +480,13 @@
 					"script": {
 						"id": "883bb801-fe17-40a9-863d-8daf882fe04d",
 						"exec": [
-							"const moment = require('moment');",
-							"pm.globals.set(\"today\", moment().format(\"MM/DD/YYYY\"));",
-							"console.log(moment().format(\"MM/DD/YYYY\"));"
+							"// const moment = require('moment');",
+							"// pm.globals.set(\"today\", moment().format(\"MM/DD/YYYY\"));",
+							"// console.log(moment());",
+							"",
+							"pm.sendRequest(\"http://worldtimeapi.org/api/timezone/Europe/Rome\", function (err, res) {",
+							"    pm.globals.set(\"localTimeRome\", res.json().datetime);",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -540,55 +544,55 @@
 	],
 	"variable": [
 		{
-			"id": "e6a5cf72-e571-40ca-9f59-2768ff6adc39",
+			"id": "ede0045b-6570-4595-9b14-c5a6eb305c6e",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "89797f73-4bb1-4148-bc5f-b9f724ba00f7",
+			"id": "9e3ab1a7-7cc1-43b5-b82d-8d9d5aba5c97",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "faacc60f-1d14-4d3a-92af-89aaec866e8a",
+			"id": "28d1b1fd-9c88-436f-b155-f43f09d0e93e",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "31a17582-6570-4c89-85b9-7ce7e37c7899",
+			"id": "7249ee87-182a-475d-a139-93ca815eacdd",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "e6c9cc5f-85ce-448a-8596-241cb993c23b",
+			"id": "3e5cf449-19af-49a5-af25-81125bfb7a4a",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "aea7158e-55fc-4185-838f-fdfba9b1fce9",
+			"id": "3aeb82ef-2077-404b-bf8e-8718a98949a4",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "4976264d-7dc2-4381-a5d0-6445024d4f29",
+			"id": "c91064ce-95da-46d8-b036-40a209285f75",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "91376ce1-ff67-433a-8417-79d414a60bd6",
+			"id": "47815dbd-ed19-4b5c-9ce9-e7357ea047bd",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "19353a71-76e7-40cd-bcbf-3dad6bbba821",
+			"id": "eb515e19-a517-4798-955c-f247b7b69ebf",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
