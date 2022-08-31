@@ -471,6 +471,48 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "shared/route-start Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "883bb801-fe17-40a9-863d-8daf882fe04d",
+						"exec": [
+							"const moment = require('moment');",
+							"pm.globals.set(\"today\", moment().format(\"MM/DD/YYYY\"));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "d72aa6f7-c29d-493f-b293-4b037b06fd3a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "NS04Mw==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "i_start_time",
+							"value": "{{$timestamp}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{upper_team_url/v1}}/shared/route-start"
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -497,55 +539,55 @@
 	],
 	"variable": [
 		{
-			"id": "7e74a6e4-5def-4e8b-b292-53a01e770558",
+			"id": "eb4a30c2-fd59-40eb-8dc3-5ef6253b7640",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "4cb82124-02e3-40f7-930b-8d45660c4e8e",
+			"id": "f12b070d-9b46-4ccc-b28c-86acc22b6961",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "3534dabb-6eed-4933-b503-11845442b9ba",
+			"id": "07f7f1cd-5a89-429b-a838-1aab7b36257d",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "59d140ae-232d-4a04-8ed9-7e2c363030b8",
+			"id": "12efbd2c-cf6a-47d7-a9a4-ea7ff50d8269",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "d3bb4e23-9d3f-460b-b808-87099e942632",
+			"id": "643b30eb-3688-4b87-af48-ee9e735d374e",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "a55c7937-392d-4e3a-838b-bd9972a7c244",
+			"id": "979a45ec-bde8-460e-81b8-18bd06be995a",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "0f6a16f5-0226-4895-92b6-ed56ca28b37d",
+			"id": "7f1469e4-bafc-48c0-be7a-a2cffa20b5d4",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "2f3eb496-0edd-4e93-affb-5aeb14d5677a",
+			"id": "9335e14d-d4fb-4d9c-bc24-2726b5e622bf",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "d9073de0-4cd0-4e7e-8917-dc01156368a6",
+			"id": "a343d5a8-481e-4bd5-b549-d99bf5a82f5e",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
