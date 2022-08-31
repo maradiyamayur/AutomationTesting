@@ -415,7 +415,7 @@
 						"exec": [
 							"let responseData=pm.response.json();",
 							"console.log(responseData);",
-							"pm.environment.set(\"v_share_url\", responseData.data.data[1].route_driver_setting.v_share_url);"
+							"pm.environment.set(\"v_share_url\", responseData.data.data.route_driver_setting.v_share_url);"
 						],
 						"type": "text/javascript"
 					}
@@ -497,55 +497,55 @@
 	],
 	"variable": [
 		{
-			"id": "9cd3d6d7-8667-45d6-a679-c6e5d5fa9bde",
+			"id": "8346282c-352f-41ef-8d57-22ce03fcf515",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "74ff4596-6430-4690-947d-6d9d46a09187",
+			"id": "36572adb-593a-40ee-ba72-4f7cc3250928",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "c05a1f6a-a5ed-42e9-9d87-77bf1e2d3583",
+			"id": "f0f8b472-17d7-4d7b-911e-51eff8662245",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "c359ef07-4982-46c9-8501-5755d049ac45",
+			"id": "70c90bd6-979a-4523-a720-889bd470ec59",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "091b0921-9fe5-4d0d-8506-8a9ae5baec62",
+			"id": "1a6a3769-90ae-455f-9e6b-1b9161271f54",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "de711708-dccc-4840-b85b-b391a6c4d594",
+			"id": "6c83070e-e8e5-4adf-a492-200c147fba18",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "67967929-373b-494a-b21e-96aa726dc855",
+			"id": "08727a9d-3922-4d84-ad59-9f40a6351168",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "23b11ffa-93e0-4ea6-b4f9-9b0629e68162",
+			"id": "c0e2f6d0-49d4-4f21-a0d3-3ec1c9ee0d89",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "2511bef6-69ca-4546-83fd-857b4764e5e5",
+			"id": "f4ac52ae-05b4-4344-8362-131c0551f901",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
