@@ -415,7 +415,7 @@
 						"exec": [
 							"let responseData=pm.response.json();",
 							"console.log(responseData);",
-							"pm.environment.set(\"v_share_url\", responseData.data[0].v_share_url);"
+							"pm.environment.set(\"v_share_url\", responseData.data.data[0].route_driver_setting.v_share_url);"
 						],
 						"type": "text/javascript"
 					}
@@ -497,55 +497,55 @@
 	],
 	"variable": [
 		{
-			"id": "1abb3ba9-e0bb-462a-8b2e-4f65b6b6ac10",
+			"id": "733bd97d-2256-4e5a-b44d-6162615b544a",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "33623841-280d-4169-a19d-790f6096193d",
+			"id": "895be21e-d96d-467e-b511-07aec1a43722",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "e77f990d-b9ba-4132-ab80-5b7afc2fe5fb",
+			"id": "d881211d-3934-4c35-9cdc-1c58ebebf9d3",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "8450e7f5-11ed-4ae4-b6ad-01bf70c16d92",
+			"id": "3af43c77-a586-4478-b848-3a306cf617bd",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "d042b93b-d339-48ee-a6e1-127e420dd108",
+			"id": "a407f9fd-0d28-4be2-b2b7-bb15c3a14197",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "fda1e400-6086-4418-8d8b-232c701fe0a3",
+			"id": "3891fb16-bb25-48cd-b959-f3136636c72d",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "4d35ceaf-4663-4260-95a2-bfe65773ab7a",
+			"id": "f8bd55e3-5e10-42cb-960e-74a48797d063",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "c0de86fc-88e6-4a53-b190-2f58bc870bf6",
+			"id": "432ccfb8-9a5a-4108-9b50-6ad9869ad7f6",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "d83bc430-2408-4b90-9202-b2da00eda91b",
+			"id": "8b196eaf-6af0-41f8-8f56-c510f2a31503",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
