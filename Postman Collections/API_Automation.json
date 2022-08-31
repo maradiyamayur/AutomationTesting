@@ -413,7 +413,8 @@
 					"script": {
 						"id": "355dd500-1b59-49d1-8880-81e93b061fd0",
 						"exec": [
-							""
+							"let responseData=pm.response.json();",
+							"console.log(responseData);"
 						],
 						"type": "text/javascript"
 					}
@@ -495,55 +496,55 @@
 	],
 	"variable": [
 		{
-			"id": "3cee82e3-d48f-46c3-83ec-9a324007efcc",
+			"id": "28cb3160-404a-4b91-a175-c9ff44edb221",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "3ea00afc-7b42-47ae-a6a8-dff730789db1",
+			"id": "5274d0ca-090b-49c7-ae49-41084c555e57",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "1f4fdbd8-e2d7-4d40-b49f-09318797218c",
+			"id": "e4cff851-333c-447b-80fd-b27ad2ab092d",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "6cf23ee1-b05c-42db-a1e1-9b2f7ba29707",
+			"id": "594ffeac-ee55-4bfe-8ef4-37c82e4b6a06",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "0a193937-18d2-4a7b-9bab-6544911f63ba",
+			"id": "8fc5945a-9bd2-4d1e-8fd2-a425db756fa2",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "92ddc553-3f11-479c-afb7-a67b6b5ac1be",
+			"id": "b1a83521-4e8d-4827-9b2f-59066e4d015c",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "375d2ac0-63c4-44c3-b2f3-3ece728f6fca",
+			"id": "e47856cc-1661-4368-be6d-a96adc62a7ec",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "630b63af-dcd7-4f0c-bde5-7618bee9fda3",
+			"id": "70ea8ce1-5eb7-43d5-b7ce-01695bb2c2a2",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "cb8f55e6-a5ce-47bd-9869-4af82b6568fa",
+			"id": "80af0c84-a3a4-49eb-8bf2-fe09f7291d15",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
