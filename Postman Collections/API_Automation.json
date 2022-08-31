@@ -491,7 +491,7 @@
 							"//date shifting for IST timezone (+5 hours and 30 minutes)",
 							"dateIST.setHours(dateIST.getHours() + 5); ",
 							"dateIST.setMinutes(dateIST.getMinutes() + 30);",
-							"console.log(dateIST + \"Test\");",
+							"console.log(dateIST);",
 							"pm.globals.set(dateIST);"
 						],
 						"type": "text/javascript"
@@ -550,55 +550,55 @@
 	],
 	"variable": [
 		{
-			"id": "c2b707a4-a8d8-4e53-ad3a-55e62fa85c15",
+			"id": "18b50b3c-24cb-486f-afef-d4538ec3a301",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "73b65b6a-64bb-4205-9754-d90e08ff2f8f",
+			"id": "0cf72b4f-6373-49d5-ab60-5f4c9afb8801",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "2fc5b031-970b-4df4-a8d8-5edc8e5fb507",
+			"id": "be72ba5b-2d8a-4770-b3b1-914560aabaf8",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "816e6439-a45e-4734-9f9c-f13615ab52ad",
+			"id": "b1ffa588-d963-48a6-823b-ec43237266af",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "3c83a16e-29a6-4bd3-b6f4-d8715b6843ed",
+			"id": "4955f380-156f-4b7c-a54e-8142657d87d8",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "b305a6c6-70e3-4a8f-bd35-3606fc41dd7a",
+			"id": "ebd955ad-8fe7-4f6f-8f35-5b347396256e",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "8f29563c-a800-4af3-90e8-d11071cc6124",
+			"id": "495e05b9-8fbf-4b72-8ba3-f3a46481302b",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "873adb58-2cde-4bfb-ac3d-4e7af6573694",
+			"id": "ada0d5bf-6e54-4dfa-9e7f-d5ba6487286e",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "22095102-83a4-4290-b179-093bf49a0a44",
+			"id": "123f4223-1d52-4fff-b468-a6b85d990d4c",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
