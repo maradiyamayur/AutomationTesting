@@ -415,7 +415,7 @@
 						"exec": [
 							"let responseData=pm.response.json();",
 							"console.log(responseData);",
-							"pm.environment.set(\"HostsToRemove\", responseData.driver.data[1].route_driver_setting.v_share_url);"
+							"pm.environment.set(\"route_driver_setting\", responseData.driver.data[1].route_driver_setting.v_share_url);"
 						],
 						"type": "text/javascript"
 					}
@@ -497,55 +497,55 @@
 	],
 	"variable": [
 		{
-			"id": "6c29593a-1135-4053-a700-66e1323f9f0e",
+			"id": "39d9a7f6-d12e-4417-a512-ac26b5f19792",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "2d02e2d8-1cbe-4045-8d2d-4a9e762b98ca",
+			"id": "028b881f-2684-4488-bd7c-fab0c9a08fd3",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "87f71408-e854-44a7-a7e0-0fac8be7730b",
+			"id": "54014139-5ffe-488f-98c8-bb269c0b3096",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "1b477a4b-9423-4b02-9397-7f64bc19856d",
+			"id": "8de00c59-288c-4764-9b77-1c920a8c6d1e",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "6ddca8a7-0a93-4efd-b404-41123b0c3b90",
+			"id": "61a72243-fb0e-44f4-a934-bf6bc9f4aa59",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "dbaac5c2-3ac9-4fdc-90fa-b7e1ccdae095",
+			"id": "e79653a2-c722-450f-ac50-f722306819b8",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "3565b74c-2bbe-4370-b947-10283449e51a",
+			"id": "86d4826e-a98a-4592-9b93-246c31ec6635",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "e7a232d6-1a51-4a30-ac4d-696cbd0ce0cd",
+			"id": "2a6edbf5-5996-418d-b66f-45b079b8b36b",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "5ca940f2-cad7-4c40-9d98-da0664b36cab",
+			"id": "b045b063-c229-4a49-a91c-38f4ae83ee79",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
