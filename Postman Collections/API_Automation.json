@@ -481,7 +481,8 @@
 						"id": "883bb801-fe17-40a9-863d-8daf882fe04d",
 						"exec": [
 							"const moment = require('moment');",
-							"pm.globals.set(\"today\", moment().format(\"MM/DD/YYYY\"));"
+							"pm.globals.set(\"today\", moment().format(\"MM/DD/YYYY\"));",
+							"console.log(moment);"
 						],
 						"type": "text/javascript"
 					}
@@ -539,55 +540,55 @@
 	],
 	"variable": [
 		{
-			"id": "9245dc13-0a4b-4e01-9540-844609b065fe",
+			"id": "d2fe30dd-16f0-4b41-8749-56d9b90b7c43",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "9af6d790-4fa9-4574-a83e-36dd5daff3af",
+			"id": "546caceb-6438-46d3-868f-0e233a8ad18b",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "b3aeb965-3e51-4505-b297-3c35fac7e275",
+			"id": "427afbb2-74dc-4871-9f21-2678913076f1",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "256195ab-a03b-4f79-ae4c-5df0a759b3dd",
+			"id": "80c9bf63-2f35-47c4-b71a-9c85486208b0",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "84b03c8a-d7cc-42d3-8e8b-03c9624c2541",
+			"id": "40cb690c-9417-43ad-9eb6-0d2e793a2433",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "c507e87a-5867-4058-a77d-368badc379ab",
+			"id": "b9e2cac6-9be0-4cfe-9f80-f0adaecfb47f",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "8b31db2c-95f6-45bf-a216-35907e77cedd",
+			"id": "c85747d0-21af-4c4c-8a59-eab476beb71f",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "4089fed1-4777-4a53-baba-d040566d6ef7",
+			"id": "8e91e1f6-1577-402e-ac16-22f2ef12e02e",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "f7c593cf-c80d-41a8-b35c-4ac1f5e5e6ee",
+			"id": "de9a707e-f7c2-4adb-84ba-ccf10d43032a",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
