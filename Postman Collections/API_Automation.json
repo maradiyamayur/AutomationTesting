@@ -482,7 +482,7 @@
 						"exec": [
 							"const moment = require('moment');",
 							"pm.globals.set(\"today\", moment().format(\"MM/DD/YYYY\"));",
-							"console.log(moment);"
+							"console.log(moment.format);"
 						],
 						"type": "text/javascript"
 					}
@@ -540,55 +540,55 @@
 	],
 	"variable": [
 		{
-			"id": "84c61ea4-e0a4-4bd3-b500-7d97d0463c80",
+			"id": "b93611cd-919d-43e4-893b-7eda138c9cbe",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "ed988b95-fee3-406c-ac02-1375035bd01e",
+			"id": "bedf8713-6d99-49b0-af53-16e71118735d",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "ae9bdbe1-ad50-4b7c-b0ba-fc88c5987fd8",
+			"id": "b988c02d-c24d-433a-96d0-d873292b5589",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "9c7b23b5-5907-48c1-aeaa-c759cb142fbc",
+			"id": "22e7609e-c6c1-452a-881e-7b7671c109a7",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "086a2c31-ccda-4f2e-9485-09396850af7b",
+			"id": "d1efcc02-77ad-4ac8-af8b-038ba4c1dd3d",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "19fc0087-704d-44b3-bcf3-8423685ac35f",
+			"id": "ae8d58cb-bccf-432a-9f5b-27bbed4fb587",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "10be1299-2c46-4885-9c56-240c4a5b6403",
+			"id": "e7b950eb-e903-4abd-b7ff-aed260fbc021",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "04602627-5792-44a2-8181-d32e95d82455",
+			"id": "eab71fe4-576c-4359-a6bd-27c6f27a5e40",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "477ec17d-27f3-4407-8d23-ebb1a898c08b",
+			"id": "367c40d5-997c-414c-b0fa-fa57faf2e0b6",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
