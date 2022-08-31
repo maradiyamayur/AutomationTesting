@@ -486,6 +486,7 @@
 							"",
 							"const dateNow = new Date();",
 							"postman.setGlobalVariable(\"todayDate\", dateNow.toLocaleDateString());",
+							"console.log(dateNow);",
 							"",
 							"",
 							"// var dateUTC = new Date(\"MM/DD/YYYY\");",
@@ -553,55 +554,55 @@
 	],
 	"variable": [
 		{
-			"id": "f96e8063-b14e-4d43-978b-7882b384ce62",
+			"id": "6d489ea2-940d-4345-822a-47779760b49d",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "92cc7c98-d8dc-4adf-a7e9-2400124c9c1b",
+			"id": "0519cf3c-d58e-447d-8d18-a44a0b78af0b",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "f02371e9-c000-4c56-add7-b98edff3d375",
+			"id": "5bdc8419-589a-4e6d-a04c-c5822e52efd4",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "38d9159f-043a-414d-981f-0b18e4ba3148",
+			"id": "f43fb34b-92d5-4a32-b653-6849ad7f1611",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "4eb8389b-6397-4050-9ada-fe6ab0752e54",
+			"id": "cc14084f-4a27-46af-90f7-8ba59d2cb989",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "49882f38-98aa-435f-9840-1abad48b6777",
+			"id": "a9f14197-a671-4257-a7e3-ca01e81ed3fd",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "9947c447-b6c6-4b9f-84fc-272e4400a0c1",
+			"id": "e85f1894-0dff-46ef-8e13-eeda86468671",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "767b05ff-266f-435f-a5af-a389ee0db9b1",
+			"id": "a5d03e34-a593-4984-96af-9b6c599a82e5",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "25abd3aa-7608-4e32-8d56-c9d2657beab1",
+			"id": "c224c553-5e03-4e50-a734-3f10097ee1fa",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
