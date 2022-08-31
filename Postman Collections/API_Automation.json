@@ -491,7 +491,7 @@
 							"//date shifting for IST timezone (+5 hours and 30 minutes)",
 							"dateIST.setHours(dateIST.getHours() + 5); ",
 							"dateIST.setMinutes(dateIST.getMinutes() + 30);",
-							"console.log(dateIST);",
+							"console.log(dateIST + \"Test\");",
 							"pm.globals.set(dateIST);"
 						],
 						"type": "text/javascript"
@@ -550,55 +550,55 @@
 	],
 	"variable": [
 		{
-			"id": "2dcfe8b3-269d-49f3-9a7b-067d94bb6422",
+			"id": "c2b707a4-a8d8-4e53-ad3a-55e62fa85c15",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "80f0f412-6298-4086-820d-be83ee69b137",
+			"id": "73b65b6a-64bb-4205-9754-d90e08ff2f8f",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "124c27dd-588b-4c55-8644-8164145677d8",
+			"id": "2fc5b031-970b-4df4-a8d8-5edc8e5fb507",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "6ad89169-5000-428d-bcc6-f7c8e32032d6",
+			"id": "816e6439-a45e-4734-9f9c-f13615ab52ad",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "f16866c8-764f-4953-b511-0ec0ff5681d7",
+			"id": "3c83a16e-29a6-4bd3-b6f4-d8715b6843ed",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "98734954-ed4f-4cff-9780-2a7da4e1b018",
+			"id": "b305a6c6-70e3-4a8f-bd35-3606fc41dd7a",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "5d28d5c3-cee1-47a7-9d37-35391e39b5ce",
+			"id": "8f29563c-a800-4af3-90e8-d11071cc6124",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "939f30c1-3619-4c2c-8acc-252655c2234a",
+			"id": "873adb58-2cde-4bfb-ac3d-4e7af6573694",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "15e244d8-b53a-415d-a649-17e1a42cd9eb",
+			"id": "22095102-83a4-4290-b179-093bf49a0a44",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
