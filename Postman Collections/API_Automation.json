@@ -540,55 +540,55 @@
 	],
 	"variable": [
 		{
-			"id": "d2fe30dd-16f0-4b41-8749-56d9b90b7c43",
+			"id": "19d8f3e5-8f8e-4d5b-aa88-3827588d5119",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "546caceb-6438-46d3-868f-0e233a8ad18b",
+			"id": "72b4a05a-ef66-476d-a159-a7d5483c5b61",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "427afbb2-74dc-4871-9f21-2678913076f1",
+			"id": "8de1201d-628f-4454-a664-87015794cf5b",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "80c9bf63-2f35-47c4-b71a-9c85486208b0",
+			"id": "50edd411-74cc-4265-9dc2-a179b7550acc",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "40cb690c-9417-43ad-9eb6-0d2e793a2433",
+			"id": "554153fd-3943-4049-96fc-0cd4b5f4e0a8",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "b9e2cac6-9be0-4cfe-9f80-f0adaecfb47f",
+			"id": "52e6d1aa-99ab-4cb0-8eb6-319131d49fd0",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "c85747d0-21af-4c4c-8a59-eab476beb71f",
+			"id": "24b4b7b6-51f9-4594-9a38-fa7d844e6a54",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "8e91e1f6-1577-402e-ac16-22f2ef12e02e",
+			"id": "ae2e3fd1-e96e-4629-9027-e431c6c130f6",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "de9a707e-f7c2-4adb-84ba-ccf10d43032a",
+			"id": "00799f75-2790-4601-8451-10157bdef5ad",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
