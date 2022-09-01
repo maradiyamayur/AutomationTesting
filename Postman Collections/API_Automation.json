@@ -485,11 +485,11 @@
 							"// console.log(moment());",
 							"",
 							"var moment = require('moment')",
-							"console.log(\"Current time : \" + moment())",
+							"console.log(\"Current time : \" + moment().format())",
 							"// console.log(\"plus 60 seconds : \" + moment().add(330, 'minutes').format())",
 							"",
 							"",
-							"pm.globals.set(\"timestamp1\", moment().timestamp);",
+							"pm.globals.set(\"timestamp1\", moment());",
 							"",
 							"// var dateUTC = new Date(\"MM/DD/YYYY\");",
 							"// var dateUTC = dateUTC.getTime() ",
@@ -556,55 +556,55 @@
 	],
 	"variable": [
 		{
-			"id": "dcf82fff-0620-4eff-84c7-de786e0a9937",
+			"id": "20c3e336-fbba-48d4-ae1e-d69b1405c735",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "e0b7b208-21e4-4fbb-a8f5-a0ae303d8ece",
+			"id": "162df60a-7421-4937-81b2-263c7800ceaa",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "da960f18-c1fa-403f-99e0-b7d93cd7ca31",
+			"id": "b39a19ed-7700-4626-83fd-f0eadc56bb29",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "7f409bd5-aa98-4b3a-96c8-0d2ebee74602",
+			"id": "1822b507-4ea7-4de2-8de0-9bfe8ef987ec",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "ccfa529d-8b6a-4494-a7e9-bd9e6d51caff",
+			"id": "bf35480e-1fb8-4152-82be-0efcc51eac0e",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "ab876b4b-320c-4f83-b238-2f5d57c6bfd2",
+			"id": "e96048a8-7e17-461b-bd90-4ce0df9cf5ac",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "4392342e-084e-48d9-aa3f-20cfca585f52",
+			"id": "c2942bf9-70bb-4f4d-a76c-777464679dd9",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "43aecae8-e09b-4c87-9b43-ed08b6123da4",
+			"id": "3064c6d9-05f5-49a3-9293-2156762634a6",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "9925c005-2663-4e4d-8a24-956aaca5211f",
+			"id": "06968e14-017c-4127-bc42-cdad8a40647e",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
