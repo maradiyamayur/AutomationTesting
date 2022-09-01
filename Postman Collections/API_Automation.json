@@ -485,7 +485,7 @@
 							"// console.log(moment());",
 							"",
 							"var moment = require('moment')",
-							"console.log(\"Current time : \" + moment().format())",
+							"console.log(\"Current time : \" + moment())",
 							"// console.log(\"plus 60 seconds : \" + moment().add(330, 'minutes').format())",
 							"",
 							"",
@@ -556,55 +556,55 @@
 	],
 	"variable": [
 		{
-			"id": "eb97900a-d6c1-4a6a-b47e-537c47cd66a1",
+			"id": "90a73504-5f6a-43e9-a6d2-d29927b21986",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "123e74ae-2c7c-49a0-8205-a1b64f0016af",
+			"id": "27b486b6-460a-430c-acac-5e0fafd0ca38",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "37656eed-03f6-4991-a4b0-0fbe9ed05b59",
+			"id": "8b1bc1df-15d9-4af7-9d8a-bd0598583ea6",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "4eb84aab-f580-429b-9ad6-a6f75da94dbd",
+			"id": "88d16558-3daf-44a3-99ac-894aadf611df",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "b2df78ac-4a16-4682-8f0c-94a49b9ada1b",
+			"id": "287c44fa-8e69-4603-9242-d0020f4ac4bb",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "0661ee74-58f8-461c-bdc1-f50e53210c0b",
+			"id": "3e8578f6-974a-4d15-b8d1-4321594d1630",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "6c51e3af-b052-43a7-a615-7493da0ed2cc",
+			"id": "296923ed-5100-4eb4-af84-63fe5cef05c9",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "f3c8f719-44af-4afb-9814-4a4b71d1ac89",
+			"id": "42eec6d5-585b-4422-84af-6e63bda3bcc9",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "ee8c0b8f-df97-4b52-9f9a-6f790b963411",
+			"id": "fe7e4a13-0832-40cd-b8db-74e261c2a3c3",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
