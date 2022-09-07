@@ -486,6 +486,7 @@
 							"console.log(\"Current time : \" + moment().valueOf());",
 							"pm.globals.set(\"timestamp1\", moment().valueOf());",
 							"",
+							"eval(pm.environment.get(\"momenttz\"));",
 							"console.log(moment.utc().tz(\"Asia/Kolkata\", \"UTC\").format())"
 						],
 						"type": "text/javascript"
@@ -544,55 +545,55 @@
 	],
 	"variable": [
 		{
-			"id": "b4b67bec-bd64-42ee-9084-749d3dfdc39d",
+			"id": "9aec8c45-52be-4872-82a8-cdf7b96476ea",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "5853e572-e292-4429-8f9f-8267814feb20",
+			"id": "9e6ed3a5-6f4a-47da-bae2-44fd7b26b170",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "15493ca9-94ca-41df-a01a-d1c6db84932e",
+			"id": "3582542b-38af-4ae4-9272-5b6326125b95",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "8be9c0e7-c2b1-473e-ae9f-ea075f22e3f3",
+			"id": "0f3b4e43-3b70-4535-82a2-9b9e06a9c0cc",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "6d5a144d-3409-4247-8805-1f3bbf97efd9",
+			"id": "645520b0-78e3-4cd3-b097-57b0e1918eea",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "8a4b657b-8f64-4153-a5d5-2efb147de770",
+			"id": "4ba80b56-ed91-4a58-9a0c-04c1931c199f",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "453dcb2a-b0e9-4f0b-90e1-141ed5eefe5c",
+			"id": "ab8aaf23-d980-4d0c-bcd3-aff803f667bf",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "9f67285e-1b3a-4b66-b37f-27403da0bdb3",
+			"id": "f8270bbb-2017-468a-bc9e-25d25b314a7f",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "74666c12-a622-485a-ba13-b19f27a67ece",
+			"id": "20a7c395-e814-4f9f-938b-68deb792c22c",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
