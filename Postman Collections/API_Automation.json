@@ -482,13 +482,6 @@
 					"script": {
 						"id": "883bb801-fe17-40a9-863d-8daf882fe04d",
 						"exec": [
-							"pm.sendRequest(\"https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data-2012-2022.min.js\", (mtzErr, mtzRes) => {",
-							"pm.sendRequest(\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js\", (mjsErr, mjsRes) => {",
-							"//you have to initialize the momentjs to make momenttz work so we are storing both into a variable",
-							"pm.environment.set(\"momentjs\", mjsRes.text());",
-							"pm.environment.set(\"momenttz\", mtzRes.text());",
-							"})",
-							"})",
 							"",
 							"",
 							"var moment = require('moment')",
@@ -496,14 +489,9 @@
 							"pm.globals.set(\"timestamp1\", moment().valueOf());",
 							"",
 							"",
-							"eval(pm.environment.get(\"momentjs\"));",
-							"eval(pm.environment.get(\"momenttz\"));",
-							"console.log(this.moment.utc().tz(\"Asia/Kolkata\", \"UTC\").format())",
 							"",
-							"(new Function(pm.environment.get(\"momentjs\")))();",
-							"(new Function(pm.environment.get(\"momenttz\")))();",
 							"",
-							"console.log(moment.utc().tz(\"Asia/Kolkata\", \"UTC\").format())"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -561,55 +549,55 @@
 	],
 	"variable": [
 		{
-			"id": "4580bb30-a965-4612-beb0-46fea1eb1652",
+			"id": "1fc892aa-f11b-4f00-83e2-15b721de1c92",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "721badd5-242f-48ae-94cd-c43fa94e9b8b",
+			"id": "4204f551-fd95-45ad-a839-a5ae4ebd3573",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "0d799726-08c4-4ce6-8017-01f5d0d1e35d",
+			"id": "dbb9f9b5-cfce-41e8-9836-59235a5680ef",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "3b7d3072-f254-4e6d-b6d6-87f242f94a07",
+			"id": "bcc93bbf-4b29-4503-814b-9369cb0a5601",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "a7c56f97-ce40-4044-bde3-467658df63f9",
+			"id": "c7f83798-c1ce-4e71-9633-dfe76ddd12fb",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "1711202e-8d40-4662-a43b-f2af61767da4",
+			"id": "8ac79c42-606d-4688-a797-7d77886fa8c6",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "c3be0196-906f-4457-ad69-59314299b3a2",
+			"id": "406fe64e-7364-4ee4-a643-4db337601579",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "18ac946d-da10-4c9e-ad27-0131e8daf2bb",
+			"id": "2240c386-47d7-46e7-8312-83d91d403138",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "bce88933-fe22-4c17-a595-b3613b1fcb29",
+			"id": "98e9734f-013f-4232-b5c3-28c0a99867f7",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
