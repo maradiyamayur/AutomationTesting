@@ -482,11 +482,20 @@
 					"script": {
 						"id": "883bb801-fe17-40a9-863d-8daf882fe04d",
 						"exec": [
+							"pm.sendRequest(\"https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data-2012-2022.min.js\", (mtzErr, mtzRes) => {",
+							"pm.sendRequest(\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js\", (mjsErr, mjsRes) => {",
+							"//you have to initialize the momentjs to make momenttz work so we are storing both into a variable",
+							"pm.environment.set(\"momentjs\", mjsRes.text());",
+							"pm.environment.set(\"momenttz\", mtzRes.text());",
+							"})",
+							"})",
+							"",
+							"",
 							"var moment = require('moment')",
 							"console.log(\"Current time : \" + moment().valueOf());",
 							"pm.globals.set(\"timestamp1\", moment().valueOf());",
 							"",
-							"eval(pm.environment.get(\"momenttz\"));",
+							"",
 							"console.log(moment.utc().tz(\"Asia/Kolkata\", \"UTC\").format())"
 						],
 						"type": "text/javascript"
@@ -545,55 +554,55 @@
 	],
 	"variable": [
 		{
-			"id": "7457dcb0-9fbf-48b2-ba5b-2f91f7f1489d",
+			"id": "77433c32-f888-46d8-86b1-8fe8f6905c49",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "ee74e102-222b-4c9b-8fd4-6db7926edaa4",
+			"id": "14f93bcf-3c63-40ae-9900-ff9749e99990",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "33c46d3a-6ee5-4d75-bb30-4c90ff9d3b10",
+			"id": "c44bdd2a-642b-49c2-b6ad-bd9bdd3ab443",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "ae302438-992d-4464-9e5c-924120ffa8b5",
+			"id": "a8390ab6-3b63-4ba2-8681-73de7f1abe43",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "87003240-6674-45ae-999b-01e869968575",
+			"id": "8a0081d7-eebc-43ab-9f04-6d2c77900f7f",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "33801d7d-52ee-4eb4-914e-87f79fdd2570",
+			"id": "6f5bd7c5-4cf7-4e96-a9ab-dadca42f54c1",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "0d234f39-87c6-4c6e-bdd8-8dd78b0e3fd1",
+			"id": "30968c2f-1199-48d0-b311-937e3da7e550",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "c5d6b9e7-be7d-4148-a402-e969ac1100ef",
+			"id": "f6151f5e-5a39-420d-addb-eeb8eaecc4c9",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "8fe4fd08-d341-4f0a-8292-09c02ac66362",
+			"id": "572336d9-a76a-437b-addd-2bfdb10e57d3",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
