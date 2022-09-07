@@ -413,7 +413,7 @@
 						"exec": [
 							"let responseData=pm.response.json();",
 							"console.log(responseData);",
-							"pm.environment.set(\"v_share_url\", responseData.data.drivers.data[0].route_driver_setting.v_share_url);",
+							"//pm.environment.set(\"v_share_url\", responseData.data.drivers.data[0].route_driver_setting.v_share_url);",
 							"",
 							"let shareUrl = responseData.data.drivers.data[0].route_driver_setting.v_share_url;",
 							"shareUrl = shareUrl.replace('https://dev8.spaceo.in/project/upper_team_share/public/', '');",
@@ -543,55 +543,55 @@
 	],
 	"variable": [
 		{
-			"id": "b9cacc0b-9b31-4d75-b734-bd9dfc1cf238",
+			"id": "5fea49c0-abda-454a-9071-1eafb5865919",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "1892ee8b-7fe0-48dc-901a-dd23db8b7e70",
+			"id": "0d54637d-6fc6-4813-ad26-466cb207e2a8",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "bd001e77-d57b-4cab-be6f-99ad9d2d3829",
+			"id": "7dcb4493-66ec-421a-8b09-acd20cdd1dcc",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "690395fc-e680-4bf1-89ee-cb39f2a97224",
+			"id": "b7d61c57-7dab-464f-9d57-34253fe5a531",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "378459eb-172a-44f3-b4ab-0e1053437335",
+			"id": "f93a451c-1b09-4f76-8608-63aad4e71976",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "78be6697-7598-4c0c-9ad5-8c817e6eeb69",
+			"id": "2c576ed7-dba6-4068-9f38-ab2523901f8e",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "36f4c9a0-e768-461d-9fa2-2271b5a556cd",
+			"id": "61205d7e-b5a2-4c3f-9314-3d449683e679",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "c27cf9fd-64e6-4ad8-937a-08ab9be061f4",
+			"id": "ed6ac302-422b-41ab-8e80-330c1a54000a",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "754aec97-25e6-48a2-acc1-f4a2e49b6bc5",
+			"id": "39423b35-e7b8-4fbb-afeb-425a084d8369",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
