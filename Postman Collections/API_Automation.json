@@ -415,7 +415,9 @@
 							"console.log(responseData);",
 							"pm.environment.set(\"v_share_url\", responseData.data.drivers.data[0].route_driver_setting.v_share_url);",
 							"",
-							"let shareUrl = responseData.data.drivers.data[0].route_driver_setting.v_share_url;"
+							"let shareUrl = responseData.data.drivers.data[0].route_driver_setting.v_share_url;",
+							"shareUrl = shareUrl.replace('https://dev8.spaceo.in/project/upper_team_share/public/', '');",
+							"pm.environment.set(\"v_share_url\", shareUrl);"
 						],
 						"type": "text/javascript"
 					}
@@ -541,55 +543,55 @@
 	],
 	"variable": [
 		{
-			"id": "da11be27-ca28-45ec-8aaf-0640c40a570f",
+			"id": "4fa168b1-9f8f-44ca-b4ff-cef4bce2285f",
 			"key": "upper_team_url/v1\n",
 			"value": "https://dev8.spaceo.in/project/upper_team_api/public/api/v1\n",
 			"type": "string"
 		},
 		{
-			"id": "2bb281f1-edfe-4b8d-b890-9d6b11edf393",
+			"id": "a4e2c74e-b0b8-41b1-a5e7-5905087adb65",
 			"key": "token\n",
 			"value": "{{token}}\n",
 			"type": "string"
 		},
 		{
-			"id": "af0fb6b2-199a-4e9f-850e-b6659ca0d555",
+			"id": "1136e8d9-1c00-47b9-8b14-187fa3f82939",
 			"key": "id\n",
 			"value": "{{id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "2e01fc5a-f354-4caf-ac99-ff8498c27858",
+			"id": "d87e6539-9231-48b0-8959-e22339249674",
 			"key": "i_user_id\n",
 			"value": "{{i_user_id}}\n",
 			"type": "string"
 		},
 		{
-			"id": "ba5cba24-5402-4b75-b6d9-7ed5faa4aa31",
+			"id": "7f3470d4-f038-4b00-ad78-984ce1ca60f4",
 			"key": "e_stop_address_type",
 			"value": "{{e_stop_address_type}}",
 			"type": "string"
 		},
 		{
-			"id": "5ef1ff43-96e8-4772-b6d3-4e1ee20d3428",
+			"id": "dcb0032e-fba5-4520-b52a-9ac5ec61151b",
 			"key": "l_address",
 			"value": "{{l_address}}",
 			"type": "string"
 		},
 		{
-			"id": "25454467-aecf-41a0-b215-70da3e8b8f87",
+			"id": "17357dc2-d33d-4be3-bb90-e834df6c3b4b",
 			"key": "d_latitude",
 			"value": "{{d_latitude}}",
 			"type": "string"
 		},
 		{
-			"id": "5c5fd390-2d53-4669-9b9f-6d933cad88f6",
+			"id": "ce5b4e08-e478-4a88-9275-93384a335fd6",
 			"key": "d_longitude",
 			"value": "{{d_longitude}}",
 			"type": "string"
 		},
 		{
-			"id": "3fada9ac-8cf2-46ae-99b1-b63ece05feae",
+			"id": "3aee4bb5-0b4b-47ce-aa92-7e4e1d1ec1e9",
 			"key": "i_optimised_order_index",
 			"value": "{{i_optimised_order_index}}",
 			"type": "string"
